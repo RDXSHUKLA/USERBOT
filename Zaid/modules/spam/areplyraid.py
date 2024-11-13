@@ -6,6 +6,7 @@ from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from cache.data import *
+from cache.data import RAID
 from Zaid.database.rraid import *
 from Zaid import SUDO_USER
 from pyrogram import Client, errors, filters
