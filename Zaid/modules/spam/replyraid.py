@@ -129,7 +129,7 @@ add_command_help(
 )
 
 @Client.on_message(
-    filters.command(["dreplyraid", "drraid"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["dreplyraid", "drraidd"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def dreplyraid(client: Client, message: Message):
     args = await extract_user(message)
