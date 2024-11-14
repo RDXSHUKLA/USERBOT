@@ -3,8 +3,8 @@ from pyrogram import filters, Client
 from pyrogram.types import Message
 # import 
 from Zaid import SUDO_USER 
-from Zaid.database.data import RAID, PBIRAID, OneWord, HIRAID, PORM, EMOJI, GROUP, VERIFIED_USERS
-
+from cache.data import RAID, PBIRAID, OneWord, HIRAID, PORM, EMOJI, GROUP, VERIFIED_USERS
+from cache.data import *
 
 ACTIVATE_RLIST = []
 
