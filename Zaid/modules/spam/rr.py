@@ -9,7 +9,8 @@ from cache.data import *
 ACTIVATE_RLIST = []
 
 
-@Client.on_message(filters.command("rr", prefixes=".") & SUDO_USER)
+@Client.on_message(filters.command("rr", prefixes=".") & (filters.me | filters.user(SUDO_USER))
+)
 async def rr(client: Client, message: Message):
     r = await message.edit_text("**Processing**")
     reply = message.reply_to_message
@@ -36,7 +37,8 @@ async def rr(client: Client, message: Message):
     ACTIVATE_RLIST.append(user.id)
     await r.edit(f"**Replyraid Activated On {user.first_name} Successfully ✅**")
 
-@Client.on_message(filters.command("drr", prefixes=".") & SUDO_USER)
+@Client.on_message(filters.command("drr", prefixes=".") & (filters.me | filters.user(SUDO_USER))
+)
 async def drr(client: Client, message: Message):
     r = await message.edit_text("**Processing**")
     reply = message.reply_to_message
