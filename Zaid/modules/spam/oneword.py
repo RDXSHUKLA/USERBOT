@@ -8,7 +8,7 @@ from pyrogram import filters, Client
 
 # import 
 from Zaid import SUDO_USER 
-from case.data import RAID, PBIRAID, OneWord, HIRAID, PORM, EMOJI, GROUP, VERIFIED_USERS
+from cache.data import RAID, PBIRAID, OneWord, HIRAID, PORM, EMOJI, GROUP, VERIFIED_USERS
 
 
 
