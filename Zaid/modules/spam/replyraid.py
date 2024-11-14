@@ -162,15 +162,7 @@ async def dreplyraid(client: Client, message: Message):
 add_command_help(
     "replyraid",
     [
-        [".replyraid or .rr", "Reply To User\n To Hindi Raid on Someone."],
-        [".dreplyraid or .drr", "To Disable ReplyRaid."],
-        [".hiraid", "Reply To User\n To Hindi Raid on Someone."],
-        [".dhiraid", "To Disable hindi ReplyRaid."],
-        [".mrraid", "Reply To User\n To love Raid on Someone."],
-        [".dmrraid", "To Disable love ReplyRaid."],
-        [".pbraid", "Reply To User\n To Panjabi Raid on Someone."],
-        [".dpbraid", "To Disable Panjabi ReplyRaid."],
-        [".eraid", "Reply To User\n To Emoji Raid on Someone."],
-        [".deraid", "To Disable Emoji ReplyRaid."],
+        ["rraid", "Reply To User\n To Reply Raid on Someone."],
+        ["drraid", "To Disable ReplyRaid."],
     ],
 )
