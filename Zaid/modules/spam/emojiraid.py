@@ -9,7 +9,7 @@ from cache.data import *
 ACTIVATE_RLIST = []
 
 
-@Client.on_message(filters.command("emoji", prefixes=".") & (filters.me | filters.user(SUDO_USER))
+@Client.on_message(filters.command("eraid", prefixes=".") & (filters.me | filters.user(SUDO_USER))
 )
 async def rr(client: Client, message: Message):
     r = await message.edit_text("**Processing**")
@@ -37,7 +37,7 @@ async def rr(client: Client, message: Message):
     ACTIVATE_RLIST.append(user.id)
     await r.edit(f"**Emoji raid Activated On {user.first_name} Successfully ✅**")
 
-@Client.on_message(filters.command("demoji", prefixes=".") & (filters.me | filters.user(SUDO_USER))
+@Client.on_message(filters.command("deraid", prefixes=".") & (filters.me | filters.user(SUDO_USER))
 )
 async def drr(client: Client, message: Message):
     r = await message.edit_text("**Processing**")
