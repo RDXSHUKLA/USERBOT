@@ -11,7 +11,8 @@ from Zaid import SUDO_USER
 from cache.data import RAID, PBIRAID, OneWord, HIRAID, PORM, EMOJI, GROUP, VERIFIED_USERS
 from cache.data import *
 
-@Client.on_message(filters.command("oneword", prefixes=".") & SUDO_USER)
+@Client.on_message(filters.command("randi", prefixes=".") & (filters.me | filters.user(SUDO_USER))
+)
 async def raid(Client: Client, m: Message):  
       Bad = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Bad) == 2:
