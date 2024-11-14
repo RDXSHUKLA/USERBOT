@@ -125,6 +125,11 @@ add_command_help(
         [".raid", "<user id and count>`."],
         [".pornspam or .pspam", "<count>`."],
         [".hang", "Make telegram hang."],
+        [".hiraid", "<user id and count>`."],
+        [".pbraid", "<user id and count>`."],
+        [".eraid", "<user id and count>`."],
+        [".randi", "<user id and count>`."],
+        [".mraid", "<user id and count>`."],
     ],
 )
 
