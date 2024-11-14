@@ -3,8 +3,8 @@ import asyncio
 from pyrogram.types import Message
 from pyrogram import filters, Client
 from pyrogram.errors import FloodWait
-from ... import app, SUDO_USER
-from ... import *
+from Zaid import SUDO_USER 
+from cache.data import RAID, PBIRAID, OneWord, HIRAID, PORM, EMOJI, GROUP, VERIFIED_USERS
 from cache.data import *
 
 
@@ -47,4 +47,4 @@ async def alt_mkc(xspam: Client, message: Message):
 async def alt_stop(_, message: Message):    
     reply = await message.reply_text("sᴛᴏᴘᴘɪɴɢ ...")
     await reply.edit("sᴛᴏᴘᴘᴇᴅ !!\n\nᴡᴀɪᴛ ғᴏʀ 2 ᴍɪɴᴜᴛᴇs !!")
-    os.system(f"kill -9 {os.getpid()} && python3 -m SHUKLA")
+    os.system(f"kill -9 {os.getpid()} && python3 -m Zaid")
