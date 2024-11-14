@@ -170,5 +170,7 @@ add_command_help(
         [".dmrraid", "To Disable love ReplyRaid."],
         [".pbraid", "Reply To User\n To Panjabi Raid on Someone."],
         [".dpbraid", "To Disable Panjabi ReplyRaid."],
+        [".emoji", "Reply To User\n To Emoji Raid on Someone."],
+        [".demoji", "To Disable Emoji ReplyRaid."],
     ],
 )
