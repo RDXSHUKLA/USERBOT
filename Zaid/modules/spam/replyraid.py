@@ -166,5 +166,7 @@ add_command_help(
         [".dreplyraid or .drr", "To Disable ReplyRaid."],
         [".hiraid", "Reply To User\n To Hindi Raid on Someone."],
         [".dhiraid", "To Disable hindi ReplyRaid."],
+        [".mrraid", "Reply To User\n To love Raid on Someone."],
+        [".dmrraid", "To Disable love ReplyRaid."],
     ],
 )
