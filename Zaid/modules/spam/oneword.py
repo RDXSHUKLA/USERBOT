@@ -37,7 +37,7 @@ async def raid(xspam: Client, e: Message):
               fname = ok.first_name
               mention = f"[{fname}](tg://user?id={id})"
               for _ in range(counts):
-                    reply = choice(Oneword)
+                    reply = choice(OneWord)
                     msg = f"{mention} {reply}"
                     await xspam.send_message(e.chat.id, msg)
                     await asyncio.sleep(0.10)
@@ -64,7 +64,7 @@ async def raid(xspam: Client, e: Message):
               fname = ok.first_name
               mention = f"[{fname}](tg://user?id={id})"
               for _ in range(counts):
-                    reply = choice(Oneword)
+                    reply = choice(OneWord)
                     msg = f"{mention} {reply}"
                     await xspam.send_message(e.chat.id, msg)
                     await asyncio.sleep(0.10)
