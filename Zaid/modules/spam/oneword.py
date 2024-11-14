@@ -9,8 +9,7 @@ from pyrogram import filters, Client
 # import 
 from Zaid import SUDO_USER 
 from cache.data import RAID, PBIRAID, OneWord, HIRAID, PORM, EMOJI, GROUP, VERIFIED_USERS
-
-
+from cache.data import *
 
 @Client.on_message(filters.command("oneword", prefixes=".") & SUDO_USER)
 async def raid(Client: Client, m: Message):  
