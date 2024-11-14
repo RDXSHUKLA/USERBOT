@@ -19,7 +19,7 @@ from .replyraid import RAIDS
 
 
 @Client.on_message(
-    filters.command(["replyraid", "rraid"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["replyraidd", "rraidd"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def replyraid(client: Client, message: Message):
     args = await extract_user(message)
